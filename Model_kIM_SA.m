@@ -163,7 +163,7 @@ switch kIM
         IM_raw = exp(x_IM2);
         X_min = [-5.84889 	-4.10006 	-6.48306 	-3.91202 	0.00000 	0.10000];
         X_max = [0.46052 	1.59938 	0.95143 	0.69315 	1.00000 	1.00000];
-        X_Input = [x_IM1, x_IM2, x_IM3, x_Ts, x_h_ratio, x_IR];  % [PGA, PGV, SA(1s),...]
+        X_Input = [x_IM1, x_IM2, x_IM3, x_Ts, x_h_ratio, x_IR];  % [PGA, CAV, SA(1s),...]
         % modify data outside the training ranges
         for i = 1:length(X_min)
             ans = (X_Input(:,i)<X_min(i));
